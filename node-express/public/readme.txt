@@ -1,0 +1,1 @@
+bu yerda mucum malumot bor!

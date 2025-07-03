@@ -1,0 +1,5 @@
+{
+    "mailserver": {
+        "password": "MAIL_PASSWORD"
+    }
+} 

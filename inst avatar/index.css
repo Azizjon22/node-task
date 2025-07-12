@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+    background: #f2f2f2;
+    padding: 40px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    direction: ltr;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  input, select, button {
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: 16px;
+  }
+  #result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #lang {
+    float: right;
+    margin-bottom: 10px;
+  }
+  

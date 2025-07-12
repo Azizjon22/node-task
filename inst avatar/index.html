@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Valyuta Konvertor</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <select id="lang" onchange="setLanguage(this.value)">
+    <option value="uz">🇺🇿 Uzb</option>
+    <option value="en">🇺🇸 Eng</option>
+    <option value="ru">🇷🇺 Rus</option>
+    <option value="ar">🇸🇦 Arab</option>
+  </select>
+
+  <h2 id="title">💱 Valyuta Konvertor</h2>
+  <input type="number" id="amount" placeholder="Miqdori" />
+  <select id="from">
+    <option value="USD">USD</option>
+    <option value="UZS">UZS</option>
+    <option value="EUR">EUR</option>
+    <option value="RUB">RUB</option>
+  </select>
+  <span>➡️</span>
+  <select id="to">
+    <option value="UZS">UZS</option>
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+    <option value="RUB">RUB</option>
+  </select>
+  <br />
+  <button onclick="convert()" id="btn">Konvertatsiya</button>
+  <div id="result"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>

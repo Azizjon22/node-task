@@ -6,7 +6,7 @@ const customaerSchema = new mongoose.Schema({
     name: {
       type: String,
       required: true,
-      minlength: 5,
+      minlength: 3,
       maxlength: 50,
     },
   
@@ -22,15 +22,21 @@ const customaerSchema = new mongoose.Schema({
       minlength: 5,
       maxlength: 50,
     },
+
+    bonusPoints: {
+      type: Number
+    }
+
   });
   
   const Customer = mongoose.model("Customer", customaerSchema);
 
   function validateCustomer(customer) {
     const schema = Joi.object({
-      name: Joi.string().min(5).max(50).required(),
+      name: Joi.string().min(3).max(50).required(),
       isVip: Joi.boolean().required(),
-      phone: Joi.string().min(5).max(50).required()
+      phone: Joi.string().min(5).max(50).required(),
+      bonusPoints: Joi.number().min(0)
     });
   
     return schema.validate(customer);

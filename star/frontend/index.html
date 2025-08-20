@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ClickStar Panel</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body class="dashboard-body">
+
+  <header>
+    <h1 id="welcome">Xush kelibsiz</h1>
+    <p>💰 Balansingiz: <span id="balance">0</span> so'm</p>
+    <p>⭐ Yulduzlaringiz: <span id="stars">0</span></p>
+  </header>
+
+  <main>
+    <div class="transfer-box">
+      <h2>Pul o‘tkazish</h2>
+      <input type="text" id="toCard" placeholder="Karta raqami (16 raqam)" maxlength="16" />
+      <p id="receiverName"></p>
+      <input type="number" id="amount" placeholder="Summani kiriting (min 1000)" min="1000" />
+      <button id="transferBtn">O‘tkazish</button>
+    </div>
+
+    <div id="transferResult" class="star-animation" style="display: none;">
+      <img src="./images/star.svg" width="80" alt="Yulduz" />
+      <p>+1000 yulduz</p>
+    </div>
+  </main>
+
+  <footer>
+    <h3>🎁 Sovg‘alar</h3>
+    <div class="gift-box">
+      <div class="gift"><img src="./images/iphone.png" alt="iPhone" /><div class="lock">🔒 100,000 ⭐</div></div>
+      <div class="gift"><img src="./images/laptop.png" alt="Laptop" /><div class="lock">🔒 80,000 ⭐</div></div>
+      <div class="gift"><img src="./images/iwatch.png" alt="iWatch" /><div class="lock">🔒 50,000 ⭐</div></div>
+      <div class="gift"><img src="./images/airpods.png" alt="AirPods" /><div class="lock">🔒 30,000 ⭐</div></div>
+    </div>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
